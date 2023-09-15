@@ -1,2 +1,4 @@
 #!/bin/sh
-grep Threepwood addressBook.txt
+echo -n "Select Surname: "
+read SURNAME
+grep -E "^*\| $SURNAME \|" addressBook.txt
